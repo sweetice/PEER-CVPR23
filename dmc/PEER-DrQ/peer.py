@@ -109,7 +109,7 @@ class Critic(nn.Module):
         self.encoder = Encoder(obs_shape=obs_shape, feature_dim=feature_dim)
 
         self.repr1 = utils.mlp(self.encoder.feature_dim + action_shape[0],
-                            hidden_dim, hidden_dim, hidden_depth-1) # TODO: Add an extensive layer
+                            hidden_dim, hidden_dim, hidden_depth-1)
         self.repr2 = utils.mlp(self.encoder.feature_dim + action_shape[0],
                             hidden_dim, hidden_dim, hidden_depth-1)
 

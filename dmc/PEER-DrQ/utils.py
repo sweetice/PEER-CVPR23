@@ -183,12 +183,12 @@ class CFG():
     # train
     num_train_steps = 110000
     num_train_iters = 1
-    num_seed_steps = 1000 # √ set to 2 for debug, default = 1000 TODO
+    num_seed_steps = 1000 #
     replay_buffer_capacity = 100000 # √
     seed = 1
     # eval
     eval_frequency = 10000
-    num_eval_episodes = 10  # TODO Change to 10 as default
+    num_eval_episodes = 10
     # misc
     log_frequency_step = 10000
     log_save_tb = False
@@ -201,7 +201,7 @@ class CFG():
     # global params
     lr = 1e-3 # √
     # IMPORTANT= please use a batch size of 512 to reproduce the results in the paper. Hovewer with a smaller batch size it still works well.
-    batch_size = 512 # √ # √ set to 128 for debug, default = 512 TODO
+    batch_size = 512
 
     obs_shape = 128
     action_shape = 128

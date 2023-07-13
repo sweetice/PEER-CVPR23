@@ -420,7 +420,7 @@ class PEERAgent(object):
         self.update_critic(obs, action, reward, next_obs, not_done, MyLogger, step)
 
         if step % self.actor_update_freq == 0:
-            # TODO
+
             self.update_actor_and_alpha(obs, MyLogger, step)
 
         if step % self.critic_target_update_freq == 0:
